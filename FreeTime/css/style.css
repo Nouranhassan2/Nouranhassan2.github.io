@@ -16,7 +16,9 @@ a {
 .end-5 {
   right: 5px;
 }
-
+.w-60 {
+  width: 60%;
+}
 /* sign up page style */
 .signUp,
 .login {
@@ -248,4 +250,9 @@ section {
 button.active {
   color: #fff !important;
   background-color: #cb70ac;
+}
+@media (max-width: 779px) {
+  .container {
+    width: 100%;
+  }
 }
