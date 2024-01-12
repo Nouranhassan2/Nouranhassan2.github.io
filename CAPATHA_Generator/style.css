@@ -1,0 +1,77 @@
+/* utilities */
+.w-35 {
+  width: 35%;
+}
+.w-85 {
+  width: 85%;
+}
+/* home styles */
+
+.home {
+  background-color: #191722;
+}
+.home h2 {
+  color: #e45826;
+  font-weight: bold;
+}
+.home .again-btn {
+  padding: 6px 12px;
+}
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e45826;
+  --bs-btn-border-color: #e45826;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #e45826;
+  --bs-btn-hover-border-color: #e45826;
+}
+.capatcha-text {
+  height: 70px;
+}
+.text {
+  position: absolute;
+  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 29px;
+  letter-spacing: 20px;
+}
+input {
+  font-size: 20px;
+}
+#check {
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.border-main {
+  padding: 12px;
+  border: 2px solid #e45826;
+}
+.border-main:focus {
+  box-shadow: none;
+  border: 2px solid #e45826;
+}
+@media (min-width: 993px) and (max-width: 1305px) {
+  .home > div {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .home > div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home > div {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home > div {
+    width: 100%;
+  }
+}

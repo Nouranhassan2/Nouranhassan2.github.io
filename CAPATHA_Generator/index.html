@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAPATCHA generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      class="home min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="capatcha-box bg-white text-center w-35 p-5 rounded-2 d-flex justify-content-center align-items-center flex-column gap-3"
+      >
+        <h2 class="text-uppercase">capatcha generator</h2>
+        <div class="capatcha-content d-flex gap-2 w-85 justify-content-between">
+          <div class="capatcha-text w-100 position-relative">
+            <img
+              src="https://30daysofjs.netlify.app/97%20-%20captcha%20generator/assets/bg6.png"
+              alt="background"
+              class="w-100 h-100 object-fit-cover rounded"
+            />
+            <span class="text-white text" id="text"></span>
+          </div>
+
+          <button class="again-btn btn btn-main" onclick="getCapatchaAgain()">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </button>
+        </div>
+        <form action="" class="w-85 position-relative">
+          <input
+            type="text"
+            class="form-control border-main"
+            placeholder="Enter Capatcha"
+            id="text"
+          />
+          <button
+            type="button"
+            id="check"
+            class="btn btn-main position-absolute"
+            onclick="checkCapatcha()"
+          >
+            Check
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
