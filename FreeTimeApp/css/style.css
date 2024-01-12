@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #e7e7e9;
+  --main-dark-color: #60334e;
+  --main-light-color: #cb70ac;
+}
+a {
+  color: var(--main-light-color);
+}
+/* utilities */
+.p-6 {
+  padding: 4rem !important;
+}
+.end-5 {
+  right: 5px;
+}
+
+/* sign up page style */
+.signUp,
+.login {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/47c4d351ffaeedb296e2e12728c16450.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form {
+  color: var(--main-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 0 var(--main-dark-color);
+}
+.form-border:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--main-light-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(219, 116, 221, 0.401);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-signUp {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #fff;
+  border: none;
+}
+.btn-signUp:hover {
+  box-shadow: 0px 0px 10px 0px var(--main-color);
+}
+
+/* home page styles */
+.btn-logout {
+  box-shadow: 0 0 10px 0 var(--main-dark-color);
+  background-color: #cb70ac;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.btn-logout:hover {
+  color: #cb70ac;
+  background-color: #e7e7e9;
+  box-shadow: 0 0 10px 0 var(--main-dark-color);
+}
+
+.home a:hover {
+  color: var(--main-light-color);
+}
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/47c4d351ffaeedb296e2e12728c16450.png);
+
+  height: 88vh;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  background-size: cover;
+  font-family: "Amatic SC", sans-serif;
+  line-height: 50px;
+}
+#home {
+  padding-top: 150px !important;
+}
+#home h1 {
+  font-size: 3.8rem;
+  color: var(--main-color-dark);
+}
+#home p {
+  font-weight: 300 !important;
+  font-size: 3.2rem;
+  color: var(--main-color-dark);
+}
+#typed {
+  font-size: 4.2rem;
+  color: var(--main-color-dark);
+}
+.typed-cursor {
+  font-size: 4.2rem;
+  color: var(--main-color-dark);
+}
+/* ^todo styles */
+.drow {
+  overflow: hidden;
+  height: 89.3vh;
+}
+.drow .nav {
+  width: 50%;
+  height: 70px;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s;
+  background: linear-gradient(to right, #4568dcbd, #b16ab385);
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  font-weight: bolder;
+  color: #3a311e;
+}
+.drow button {
+  background-color: var(--main-color);
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+.drow .save {
+  background-color: #1565c0;
+  color: #fff;
+}
+.clr {
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  transition: transform 0.5s;
+}
+.clr:hover {
+  transform: scale(1.2);
+}
+.clr:nth-child(1) {
+  background-color: #000;
+}
+.clr:nth-child(2) {
+  background-color: red;
+}
+.clr:nth-child(3) {
+  background-color: orange;
+}
+.clr:nth-child(4) {
+  background-color: blue;
+}
+.clr:nth-child(5) {
+  background-color: purple;
+}
+.clr:nth-child(6) {
+  background-color: yellowgreen;
+}
+.clr:nth-child(7) {
+  background-color: yellow;
+}
+.clr:nth-child(8) {
+  background-color: #fff;
+}
+input[type="color"] {
+  width: 60px;
+  height: 35px;
+}
+#ageOutputId {
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+#ageInputId {
+  background: linear-gradient(to right, #000428 0%, #004e92 100%);
+  height: 7px;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  accent-color: #fff;
+}
+.emoji {
+  font-size: 20px;
+}
+
+/* playing */
+
+.color {
+  background-color: rgb(236, 203, 236);
+  border-bottom: 30px solid rgb(232, 115, 205);
+}
+
+.color button {
+  transition: 350ms color;
+}
+
+.color button:hover,
+.color button.active {
+  color: #fff !important ;
+}
+
+section {
+  min-height: 61vh;
+}
+
+.color-card {
+  height: 200px;
+}
+
+.btn2 {
+  padding: 10px 30px;
+  margin-left: 5px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 2px solid #cb70ac;
+}
+button.active {
+  color: #fff !important;
+  background-color: #cb70ac;
+}
