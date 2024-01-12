@@ -1,6 +1,7 @@
 // & ===> HTML Variables
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
+const togglePassword = document.querySelector("#togglePassword");
 const loginBtn = document.querySelector(".btn-signUp");
 var usersData = JSON.parse(localStorage.getItem("users")) || [];
 console.log(usersData);
@@ -46,4 +47,4 @@ function togglePasswordVisibility() {
 
 // & ===>Events
 loginBtn.addEventListener("click", loginUser);
-toggleBtn.addEventListener("click", togglePasswordVisibility);
+togglePassword.addEventListener("click", togglePasswordVisibility);

@@ -56,14 +56,7 @@ function validateUserName() {
 function vailidateEmail() {
   let email = emailInput.value;
   let ragexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (ragexEmail.test(email) == true) {
-    emailInput.classList.add("is-valid");
-    emailInput.classList.remove("is-invalid");
-  } else {
-    emailInput.classList.add("is-invalid");
-    emailInput.classList.remove("is-valid");
-    alert("write valid email");
-  }
+  ragexEmail.test(email) == true;
 }
 
 // function to validate password
