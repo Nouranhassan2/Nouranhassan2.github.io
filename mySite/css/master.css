@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+:root {
+  --bgColor: #121212;
+  --textwhite: #fff;
+  --primaryColor: #db26d5;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Righteous", sans-serif;
+
+  background: rgb(18, 49, 85);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 138, 148, 1) 0%,
+    rgba(110, 9, 121, 1) 0%,
+    rgba(212, 75, 184, 1) 57%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.text-bink {
+  color: #db26d5;
+}
+.text-b {
+  color: #e99ee6;
+}
+.text-gray {
+  color: gray;
+}
+.navbar-nav {
+  --bs-navbar-color: var(--bgColor);
+  --bs-navbar-hover-color: var(--primaryColor);
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  --bs-navbar-active-color: var(--primaryColor);
+  color: var(--bs-navbar-active-color);
+}
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-tertiary-bg-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+.navbar-brand span {
+  color: var(--primaryColor);
+}
+.navbar-brand {
+  --bs-navbar-brand-font-size: 30px;
+  font-size: var(--bs-navbar-brand-font-size);
+  --bs-navbar-brand-font-family: 900;
+  font-family: var(--bs-navbar-brand-font-family);
+}
+/* Home Styles */
+
+#Home {
+  min-height: 100vh;
+}
+
+.btn-bink {
+  width: 30%;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--primaryColor);
+  --bs-btn-border-color: var(--primaryColor);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--primaryColor);
+  --bs-btn-hover-border-color: var(--primaryColor);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--primaryColor);
+  --bs-btn-active-border-color: var(--primaryColor);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--primaryColor);
+  --bs-btn-disabled-border-color: var(--primaryColor);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+.icons a {
+  margin-left: 5px;
+  color: #fff;
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s;
+}
+.icons a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.icons a i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 771px) {
+  .text {
+    text-align: center;
+    margin-inline: auto;
+  }
+  .img {
+    margin-inline: auto;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .btn-bink {
+    margin-inline: auto;
+  }
+  .icons {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* About styles */
+#About .container {
+  background-color: #121212;
+  color: #fff;
+  padding: 100px 50px;
+}
+.container h2 {
+  position: relative;
+}
+.container h2::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: gray;
+  top: -5px;
+  left: 25%;
+}
+.container h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: gray;
+  bottom: -5px;
+  right: 25%;
+}
+ul li {
+  padding-top: 5px;
+}
+#About ul li::before {
+  content: "•";
+  margin-right: 5px;
+}
+h3.h3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+#About .inner {
+  background-color: #fff;
+  padding: 10px;
+  height: 200px;
+  color: #000;
+}
+/* Skills Styles */
+#Skills .container {
+  background-color: #121212;
+  color: #fff;
+  padding: 100px 50px;
+}
+#Skills .container .inner {
+  background-color: #db26d5;
+  color: #121212;
+  margin-top: 60px;
+  padding: 10px 20px;
+  border-radius: 20px 0 20px 0;
+}
+/* Portfolio section */
+#portfolio .container {
+  background-color: #121212;
+  color: #000;
+  padding: 100px 50px;
+}
+#portfolio .container .inner {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+#portfolio .container .inner a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Contact Sections */
+#contact .container {
+  background-color: #080808ed;
+  color: #000;
+  padding: 100px 50px;
+}
