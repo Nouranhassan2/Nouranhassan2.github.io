@@ -15,13 +15,13 @@ ul {
 body {
   font-family: "Righteous", sans-serif;
 
-  background: rgb(18, 49, 85);
+  background: rgb(139, 138, 148);
   background: linear-gradient(
     90deg,
     rgba(139, 138, 148, 1) 0%,
-    rgba(110, 9, 121, 1) 0%,
-    rgba(212, 75, 184, 1) 57%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(179, 13, 144, 1) 0%,
+    rgba(228, 126, 219, 1) 100%,
+    rgba(200, 110, 196, 1) 100%
   );
   background-size: cover;
   background-position: center;
@@ -144,6 +144,11 @@ body {
     align-items: center;
   }
 }
+@media (min-width: 771px) {
+  .w-lg-50 {
+    width: 50%;
+  }
+}
 
 /* About styles */
 #About .container {
@@ -175,9 +180,15 @@ body {
 ul li {
   padding-top: 5px;
 }
-#About ul li::before {
+#Skills ul li {
+  margin-top: 5px;
+  font-size: 20px;
+}
+#About ul li::before,
+#Skills ul li::before {
   content: "•";
   margin-right: 5px;
+  color: #db26d5;
 }
 h3.h3 {
   margin-top: 60px;
@@ -186,8 +197,11 @@ h3.h3 {
 #About .inner {
   background-color: #fff;
   padding: 10px;
-  height: 200px;
+  min-height: 200px;
   color: #000;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
 }
 /* Skills Styles */
 #Skills .container {
@@ -212,6 +226,13 @@ h3.h3 {
   background-color: gray;
   padding: 10px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#portfolio .container .inner button {
+  position: absolute;
+  right: 10px;
 }
 #portfolio .container .inner a {
   color: #fff;
