@@ -35,7 +35,7 @@ function getDataToLocalStorage() {
 // function to validate user name
 function validateUserName() {
   let userName = userNameInput.value;
-  let ragexUserName = /^[A-z]{1,30}$/;
+  let ragexUserName = /^[A-z]{1,30}/;
 
   if (ragexUserName.test(userName) == true) {
     userNameInput.classList.remove("is-invalid");
