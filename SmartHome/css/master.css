@@ -14,6 +14,7 @@ ul {
 }
 body {
   font-family: "Righteous", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Header Styling */
@@ -134,13 +135,14 @@ img.logo {
   padding-block: 50px;
   text-align: center;
 }
-.about .container h2 {
-  font-weight: 600;
-}
 .about .container p {
   width: 80%;
   margin-inline: auto;
 }
+.about .container h2 {
+  font-weight: 600;
+}
+
 /* shop styles */
 .shop {
   background-color: #b6c4b6;
