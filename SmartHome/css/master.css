@@ -122,6 +122,12 @@ img.logo {
   .text h2 {
     font-size: 30px;
   }
+  .about .container {
+    width: 100%;
+  }
+  .about .container p {
+    width: 100%;
+  }
 }
 /* about styles */
 .about .container {
@@ -132,7 +138,7 @@ img.logo {
   font-weight: 600;
 }
 .about .container p {
-  width: 750px;
+  width: 80%;
   margin-inline: auto;
 }
 /* shop styles */
