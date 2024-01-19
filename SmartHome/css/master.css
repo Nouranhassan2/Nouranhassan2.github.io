@@ -14,7 +14,6 @@ ul {
 }
 body {
   font-family: "Righteous", sans-serif;
-  overflow-x: hidden;
 }
 
 /* Header Styling */
@@ -113,7 +112,7 @@ img.logo {
   .text {
     text-align: start;
     margin-inline: auto;
-    width: 100%;
+    width: 95%;
   }
   .home img {
     width: 51%;
@@ -161,4 +160,9 @@ img.logo {
 }
 .img-content p {
   font-size: 15px;
+}
+.home,
+.about,
+.shop {
+  overflow: hidden;
 }
