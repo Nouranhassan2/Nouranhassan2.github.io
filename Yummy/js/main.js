@@ -1,5 +1,5 @@
 $(function () {
-  // Loading Screen
+  //============= Loading Screen
 
   $(".loading").fadeOut(700, function () {
     $("body").css("overflow", "auto");
@@ -14,7 +14,7 @@ $(function () {
   const searchContainer = $("#searchBox");
   const contactContainer = $("#contactBox");
 
-  // NavBar
+  //============= Side Bar
 
   function openNav() {
     sideBar.animate({ left: 0 }, 600);
@@ -194,7 +194,7 @@ $(function () {
 
     searchContainer.html(`${searchInputs}`);
 
-    $(".inputByName").on("input", function () {
+    $(".inputByName").on("change", function () {
       let searchInput = $(this).val();
       getMealsByName(searchInput);
     });
@@ -232,7 +232,7 @@ $(function () {
       let imgSrc = categories[i].strCategoryThumb;
       let category = categories[i].strCategory;
       categoryData += `
-      <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="item">
                         <img src="${imgSrc}" class="w-100" loading="lazy" alt="${category}">
                         <div class="layer"><h2>${category}</h2></div>
@@ -327,7 +327,7 @@ $(function () {
     let areaInfo = ``;
     for (let i = 0; i < areas.length; i++) {
       areaInfo += `
-        <div class="col-sm-6 col-md-4 col-lg-3 text-center area text-white">
+        <div class="col-sm-6 col-md-4 col-lg-3 text-center area text-white mb-4">
               <i class="fa-solid fa-house fa-4x mb-2"></i>
               <h3>${areas[i].strArea}</h3>
             </div>
@@ -381,7 +381,7 @@ $(function () {
     let ingredientsInfo = ``;
     for (let i = 0; i < 20; i++) {
       ingredientsInfo += `
-        <div class="col-sm-6 col-md-4 col-lg-3 text-center text-white ingredient">
+        <div class="col-sm-6 col-md-4 col-lg-3 text-center text-white ingredient mb-4">
               <i class="fa-solid fa-bowl-rice fa-4x"></i>
               <h3>${mealIngredients[i].strIngredient}</h3>
             </div>
@@ -491,7 +491,7 @@ $(function () {
 
     contactContainer.html(`${contactInputs}`);
 
-    // Validation
+    //============ Validation
 
     const usernameInput = $(".nameInput");
     const emailInput = $(".emailInput");
