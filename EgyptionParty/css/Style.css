@@ -142,7 +142,10 @@ textarea {
   display: none;
 }
 /* End contacts */
-@media (max-width: 771px) {
+@media (min-width: 771px) {
+  .w-lg-50 {
+    width: 50%;
+  }
 }
 @media (max-width: 991px) {
   .duration {
