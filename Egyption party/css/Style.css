@@ -1,0 +1,151 @@
+/* start Global */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  z-index: 1000;
+}
+.inner-bar {
+  background-color: black;
+  position: relative;
+  opacity: 0;
+}
+.outer-bar {
+  position: relative;
+}
+.inner-bar ul {
+  margin-top: 30px;
+}
+.inner-bar ul li {
+  padding: 20px 35px 20px 0px;
+  margin: 0px 150px 0px 0px;
+}
+.close-btn {
+  color: white;
+  margin-left: 250px;
+  margin-top: 10px;
+  font-size: 32px;
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+.inner-bar ul li a {
+  color: white;
+  transition: 0.3s;
+  font-size: 25px;
+}
+.inner-bar ul li a:hover,
+.close-btn:hover {
+  color: red;
+}
+.open-btn {
+  position: fixed;
+  font-size: 32px;
+  color: white;
+  align-self: center;
+  cursor: pointer;
+  top: 50%;
+  padding-left: 5px;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  background-image: url("../images/events-heavenly-header.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  width: 100%;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+}
+.home-content {
+  margin-left: 0;
+}
+.singer-details {
+  width: 100%;
+}
+.singer-details h2 {
+  background-color: rgba(214, 46, 51, 0.6);
+  font-size: 28px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+.singer-details p {
+  color: black;
+  background-color: #cccccc;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+  display: none;
+}
+.singer-details p:first-of-type {
+  display: block;
+}
+.duration {
+  padding-block: 100px;
+  background-image: url("../images/invitation-2508607__340.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 50vh;
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  color: #fff;
+  z-index: 999;
+}
+.inner h5 {
+  padding: 50px;
+}
+.socialIcons {
+  margin-top: 30px;
+}
+.socialIcons i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s all;
+}
+.socialIcons i:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+textarea {
+  height: 200px;
+  resize: vertical;
+}
+#textAreaWarning {
+  display: none;
+}
+/* End contacts */
+@media (max-width: 771px) {
+}
+@media (max-width: 991px) {
+  .duration {
+    min-height: 100vh;
+  }
+}
