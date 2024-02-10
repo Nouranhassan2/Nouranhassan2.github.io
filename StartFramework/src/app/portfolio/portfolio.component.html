@@ -1,0 +1,29 @@
+<section class="portfolio min-vh-100">
+  <div class="container">
+    <div
+      class="portfolio-content h-100 w-100 pb-5 mx-auto d-flex justify-content-center flex-column"
+    >
+      <h2 class="text-center pt-5">portfolio COMPONENT</h2>
+      <div class="icon">
+        <i>⭐</i>
+      </div>
+      <div class="row">
+        <div class="col-md-4 gy-4" *ngFor="let img of images; index as i">
+          <div class="inner">
+            <img [src]="images[i]" class="w-100 rounded-3" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 gy-4" *ngFor="let img of images; index as i">
+          <div class="inner">
+            <img [src]="images[i]" class="w-100 rounded-3" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 gy-4" *ngFor="let img of images; index as i">
+          <div class="inner">
+            <img [src]="images[i]" class="w-100 rounded-3" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

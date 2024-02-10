@@ -1,0 +1,41 @@
+.home {
+  background-color: #1abc9c;
+}
+.home-content {
+  flex-direction: column;
+  margin-block: 120px;
+}
+.home-content .image {
+  width: 250px;
+  margin: 0px 0px 16px;
+}
+
+.text h2 {
+  font-size: 39.928px;
+  margin: 0px 0px 16px;
+}
+.star {
+  position: relative;
+  color: #fff;
+}
+.star::after {
+  content: "";
+  position: absolute;
+  left: 17%;
+  background-color: #fff;
+  width: 22%;
+  height: 4px;
+  top: 10px;
+}
+.star::before {
+  content: "";
+  position: absolute;
+  right: 17%;
+  background-color: #fff;
+  width: 22%;
+  height: 4px;
+  top: 10px;
+}
+.category {
+  font-size: 16px;
+}

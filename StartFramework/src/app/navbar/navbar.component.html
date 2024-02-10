@@ -1,0 +1,42 @@
+<nav
+  class="navbar navbar-expand-lg text-white bg-dark-blue fixed-top"
+  [class]="isScroll ? 'py-2' : 'py-4'"
+>
+  <div class="container">
+    <a class="navbar-brand" routerLink="home">START FRAMEWORK</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about" routerLinkActive="linkActive"
+            >ABOUT</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="portfolio"
+            routerLinkActive="linkActive"
+            >PORTFOLIO</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="linkActive"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

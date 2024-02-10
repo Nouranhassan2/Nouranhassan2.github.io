@@ -1,0 +1,49 @@
+.container {
+  height: 85vh;
+}
+.contact h1 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+.icon i {
+  font-size: 20px;
+}
+
+.icon {
+  position: relative;
+  text-align: center;
+  margin: 0px 0px 16px;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  left: 43%;
+  top: 15px;
+  width: 5%;
+  height: 5px;
+  background-color: #000;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  right: 43%;
+  top: 15px;
+  width: 5%;
+  height: 5px;
+  background-color: #000;
+}
+
+.contact label {
+  position: relative;
+  transition: all 0.5s;
+  top: 40px;
+}
+.contact .showLable {
+  top: 0;
+}
+label {
+  color: #1abc9c;
+}
+.form .send {
+  background-color: #1abc9c;
+}
